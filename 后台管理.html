@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理</title>
+    <link rel="stylesheet" href="/static/plugins/bootstrap-3.4.1/css/bootstrap.css">
+    <style>
+        .maxDiv {
+            width: 1200px;
+            height: 800px;
+            /*border: 5px solid #2b542c;*/
+            margin-right: auto;
+            margin-left: auto;
+
+        }
+
+        .buttn {
+            margin-left: 30px;
+        }
+
+        .litt {
+            margin-bottom: 15px;
+        }
+
+        .face {
+            margin: 10px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        .maxDiv .form-inline a {
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        .maxDiv .form-inline a:hover{
+            color: orange;
+        }
+
+        .maxDiv .fo{
+            margin-left: 25px;
+        }
+    </style>
+</head>
+<body>
+<div class="maxDiv">
+    <div>
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">我的世界</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">热销<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">爆款</a></li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="输入你的愿望">
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="buttn litt">
+        <button type="submit" class="btn btn-success">提交</button>
+    </div>
+    <div class="panel panel-warning face">
+        <div class="panel-body">
+            表单区域
+        </div>
+        <div class="panel-footer">
+            <form class="form-inline">
+                <div>
+                    <a>
+                        请输入你的愿望
+                    </a>
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="exampleInputEmail3">姓名</label>
+                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="姓名">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="exampleInputPassword3">年龄</label>
+                    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="年龄">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="exampleInputPassword3">愿望</label>
+                    <input type="password" class="form-control" id="exampleInputPassword4" placeholder="愿望">
+                </div>
+
+                <button type="submit" class="btn btn-info">许愿</button>
+            </form>
+        </div>
+    </div>
+    <div class="container" data-example-id="contextual-table">
+        <table class="table table-hover table-bordered">
+            <thead>
+            <tr>
+                <th>队列</th>
+                <th>年龄</th>
+                <th>地址</th>
+                <th>愿望</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="active">
+                <th scope="row">1</th>
+                <td>张三</td>
+                <td>14</td>
+                <td>iPad</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>李四</td>
+                <td>18</td>
+                <td>女朋友</td>
+            </tr>
+            <tr class="success">
+                <th scope="row">3</th>
+                <td>王五</td>
+                <td>26</td>
+                <td>500万</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>赵六</td>
+                <td>22</td>
+                <td>身体健康</td>
+            </tr>
+            <tr class="info">
+                <th scope="row">5</th>
+                <td>诸葛云</td>
+                <td>54</td>
+                <td>孙子</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="bs-example" data-example-id="disabled-active-pagination">
+    <div aria-label="...">
+      <ul class="pagination fo">
+        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+     </ul>
+   </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>
