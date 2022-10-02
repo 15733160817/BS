@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <span id="wel1">吹吹牛逼败败火，点点红心你爱我</span>
+  <script>
+    function show() {
+      var tag = document.getElementById("wel1");  //找到对应的标签
+      var weltext = tag.innerText;  // 获取标签内的text内容
+      var firstChar = weltext[0]; // 文本取值
+      var otherChar = weltext.substring(1, weltext.length);  // 切片取值
+      var newText = otherChar + firstChar;
+
+      tag.innerText = newText;
+    }
+    setInterval(show,500);//定时执行函数 毫秒
+
+  </script>
+</body>
+</html>

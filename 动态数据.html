@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul id="city">
+<!--        <li>北京</li>-->
+<!--        <li>上海</li>-->
+<!--        <li>广州</li>-->
+<!--        <li>深圳</li>-->
+    </ul>
+    <script type="text/javascript">
+        var cityList = ["北京","上海","广州","深圳"];
+        for (var idx in cityList){
+            var text = cityList[idx]; //获取列表数据
+            var tag = document.createElement("li"); //创建列表
+            tag.innerText = text;  // 获取列表数据
+            var parrenTag = document.getElementById("city"); // 找到对应的标签
+            parrenTag.appendChild(tag); // 添加获取的列表数据
+
+        }
+    </script>
+</body>
+</html>
